@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Please try again!</title>
+  </head>
+
+  <style>
+    .redirect {
+      width: 60%; /* Adjust the width as needed */
+      padding: 10px; /* Adjust the padding as needed */
+      background-color: #ff7f50; /* Change the background color */
+      color: white; /* Change the text color */
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    p {
+      text-align: center;
+      text-transform: uppercase;
+      color: #ff7f50;
+      font-family: Tahoma, sans-serif;
+    }
+  </style>
+  <body>
+    <div class="login-form">
+      <div class="img1">
+        <img
+          src="img/Firefly.jpg"
+          alt="92 Finacial Solutions"
+          width="200px"
+          height="200px"
+        />
+      </div>
+
+      <p>Email or User already in use</p>
+      <p>please try again!</p>
+
+      <!-- Add a new button for redirection -->
+      <button
+        id="redirect-btn"
+        class="redirect"
+        onclick="redirectToLoginPage()"
+      >
+        Go to Login Page
+      </button>
+    </div>
+
+    <footer>
+      <p>92 Financial Solutions - Design By Gabriel Da Mota 2023.</p>
+    </footer>
+
+    <!-- JavaScript for redirection -->
+    <script>
+      function redirectToLoginPage() {
+        // You can replace 'login.html' with the actual URL of your login page
+        window.location.href = "index.php";
+      }
+    </script>
+  </body>
+</html>
